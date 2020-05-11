@@ -39,7 +39,7 @@
     <a href="w01/d4/js-objects-lab.md">Lab: Guess the Number</a>
   </td>
   <td>
-    <a href="w01/d4/dom-events.md">DOM Events</a></br></br>
+    <a href="w01/d4/dom-events.md">DOM Events</a>
   </td>
 </tr>
 
@@ -75,7 +75,7 @@
   <td><strong>Homework</strong></td>
   <td>
     <a href="w01/d1/hw-markdown-intro.md">Intro to Markdown</a></br></br>
-    <a href="w01/d1/git-intro-workflow.md">Review how to use git</a>
+    <a href="w01/d1/git-intro-workflow.md">Review how to use git</a></br></br>
     <a href="https://www.internetingishard.com/html-and-css/introduction/">Read Interneting Is Hard: Introduction</a></br></br>
     <a href="https://www.internetingishard.com/html-and-css/basic-web-pages/">Read Interneting Is Hard: Basic Web Pages</a>
   </td>
@@ -93,8 +93,8 @@
   </td>
   <td>
     <a href="w01/d4/dom-practice-lab-1.md">DOM Lab Part 1 (Deliverable)</a></br></br>
-    <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">Watch: What is the Event Loop?</a>
-    <a href="https://www.internetingishard.com/html-and-css/floats/">Read Interneting Is Hard: Floats</a>
+    <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">Watch: What is the Event Loop?</a></br></br>
+    <a href="https://www.internetingishard.com/html-and-css/floats/">Read Interneting Is Hard: Floats</a></br></br>
     <a href="https://www.internetingishard.com/html-and-css/semantic-html/">Read Interneting Is Hard: Semantic HTML</a></br></br>
     <a href="https://www.internetingishard.com/html-and-css/forms/">Read Interneting Is Hard: Forms</a>
   </td>
