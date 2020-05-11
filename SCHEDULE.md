@@ -31,7 +31,8 @@
   </td>
   <td>
     <a href="w01/d3/html-intro.md">Intro to HTML</a></br></br>
-    <a href="w01/d3/css-intro.md">Intro to CSS</a>
+    <a href="w01/d3/css-intro.md">Intro to CSS</a></br></br>
+    <a href="w01/d3/css-selectors-lab.md">CSS Selectors Lab (Deliverable)</a>
   </td>
   <td>
     <a href="w01/d4/js-objects.md">JS Objects</a></br></br>
@@ -61,7 +62,6 @@
   <td>
     <a href="w01/d4/dom-intro.md">Intro to the DOM</a></br></br>
     <a href="w01/d4/dom-practice-lab-1.md">DOM Lab Part 1 (Deliverable)</a></br></br>
-    <a href="w01/d4/css-selectors-lab.md">CSS Selectors Lab (Deliverable)</a>
   </td>
   <td>
     JS Timers </br></br>
@@ -88,19 +88,19 @@
   <td>
     <a href="w01/d3/js-functions-lab.md">Lab: JS Functions (Deliverable)</a></br></br>
     <a href="https://www.internetingishard.com/html-and-css/css-selectors/">Read Interneting Is Hard: CSS Selectors</a></br></br>
-    <a href="https://www.internetingishard.com/html-and-css/floats/">Read Interneting Is Hard: Floats</a>
+    <a href="w01/d3/css-selectors-lab.md">CSS Selectors Lab (Deliverable)</a></br></br>
+    <a href="https://flukeout.github.io/">CSS Diner</a></br></br>
   </td>
   <td>
     <a href="w01/d4/dom-practice-lab-1.md">DOM Lab Part 1 (Deliverable)</a></br></br>
-    <a href="w01/d4/css-selectors-lab.md">CSS Selectors Lab (Deliverable)</a></br></br>
-    <a href="https://flukeout.github.io/">CSS Diner</a></br></br>
     <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">Watch: What is the Event Loop?</a>
+    <a href="https://www.internetingishard.com/html-and-css/floats/">Read Interneting Is Hard: Floats</a>
+    <a href="https://www.internetingishard.com/html-and-css/semantic-html/">Read Interneting Is Hard: Semantic HTML</a></br></br>
+    <a href="https://www.internetingishard.com/html-and-css/forms/">Read Interneting Is Hard: Forms</a>
   </td>
   <td>
     <a href="w01/d5/dom-practice-lab-1.md">DOM Lab Part 2 (Deliverable)</a></br></br>
     <a href="w01/d5/tic-tac-toe">Tic Tac Toe (Deliverable)</a></br></br>
-    <a href="https://www.internetingishard.com/html-and-css/semantic-html/">Read Interneting Is Hard: Semantic HTML</a></br></br>
-    <a href="https://www.internetingishard.com/html-and-css/forms/">Read Interneting Is Hard: Forms</a>
   </td>
 </tr>
 </tbody>
