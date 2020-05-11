@@ -273,3 +273,5 @@ When you complete our program with passing status, you unlock our alumni perks:
 - Access to our Alumni Community
 
 # Welcome!
+
+## What's Good Class?
