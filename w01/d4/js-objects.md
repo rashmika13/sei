@@ -1,6 +1,3 @@
-[click to view as a presentation](https://presentations.generalassemb.ly/440386256a26242f2ce925d87bd7e04c#/1)
-
----
 <img src="https://i.imgur.com/DEsPVNw.png" height="400">
 
 # Intro to JavaScript Objects
