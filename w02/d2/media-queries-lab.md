@@ -4,7 +4,7 @@
 
 ## Intro
 
-Time for some practice using media queries to build layouts for different size screens!
+Time for some practice using media queries to build layouts for different screen sizes!
 
 This lab **is not a deliverable**.
 
