@@ -9,6 +9,6 @@
 |May 13|[CSS Selectors Lab](w01/d3/css-selectors-lab)| May 20 |
 |May 14/15|DOM Practice Lab [Part 1](w01/d4/dom-practice-lab-1.md) & [Part 2](w01/d5/dom-practice-lab-2.md) | May 22 |
 |May 15| [Tic Tac Toe](w01/d5/tic-tac-toe/readme.md) | May 29 |
-|May 19| [CSS Flexbox Grid Lab](w02/d2/css-grid-flexbox-lab) | May 29 |
+|May 19| [CSS Flexbox Grid Lab](w02/d2/css-flexbox-grid-lab) | May 29 |
 |May 21| [JQuery Lab](w02/d4/jquery-lab) | May 29 |
 
