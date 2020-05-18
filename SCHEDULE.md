@@ -149,11 +149,11 @@
   <td>Holiday</td>
   <td>
     <a href="w02/d2/responsive-design.md">Responsive Design</a></br></br>
+    <a href="w02/d2/arrow-functions.md">Arrow Functions</a></br></br>
     <a href="w02/d2/media-queries-lab.md">Media Queries Lab</a>
   </td>
   <td>
     <a href="w02/d3/array-iterator-methods.md">Array Iterator Methods</a></br></br>
-    <a href="w02/d3/arrow-functions.md">Arrow Functions</a></br></br>
     <a href="w02/d3/this-keyword.md">'this' keyword</a>
   </td>
   <td>
