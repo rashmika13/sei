@@ -133,8 +133,8 @@
     <a href="w02/d3/js-classes-lab.md">JS Classes Lab</a>
   </td>
   <td>
-    <a href="w02/d4/jquery-part-1.md">JQuery part 1</a></br></br>
-    <a href="w02/d4/jquery-part-2.md">JQuery part 2</a>
+    <a href="w02/d4/jquery-part-1.md">jQuery part 1</a></br></br>
+    <a href="w02/d4/jquery-part-2.md">jQuery part 2</a>
   </td>
   <td>
     DSI Presentations</br></br>
@@ -157,7 +157,7 @@
     <a href="w02/d3/this-keyword.md">'this' keyword</a>
   </td>
   <td>
-    <a href="w02/d4/jquery-lab.md">JQuery Lab (Deliverable)</a>
+    <a href="w02/d4/jquery-lab.md">jQuery Lab (Deliverable)</a>
   </td>
   <td>
     <a href="w01/d5/guide-to-building-a-browser-game.md">Build a Game Together</a></br></br>
@@ -187,7 +187,7 @@
   </td>
 
   <td>
-    <a href="w02/d4/jquery-lab.md">JQuery Lab (Deliverable)</a>
+    <a href="w02/d4/jquery-lab.md">jQuery Lab (Deliverable)</a>
   </td>
 
   <td>Project 1 & Review</td>
