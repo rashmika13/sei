@@ -161,7 +161,8 @@
   </td>
   <td>
     <a href="w01/d5/guide-to-building-a-browser-game.md">Build a Game Together</a></br></br>
-    Finish Labs, work on Project 1
+    Finish Labs</br></br>
+    Project 1
   </td>
 </tr>
 
@@ -181,7 +182,7 @@
   </td>
 
   <td>
-    <a href="w02/d3/js-classes-lab.md">JS Classes Lab</a></br>
+    <a href="w02/d3/js-classes-lab.md">JS Classes Lab</a></br></br>
     <a href="w02/d3/array-methods-lab.md">Array Methods Lab</a>
   </td>
 
