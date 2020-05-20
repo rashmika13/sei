@@ -128,7 +128,7 @@ const comments = [
 
 ## DELIVERABLE?
 
-Yes, this lab is a deliverable.  Please submit the link to your "Array Methods Lab" repl.
+No this lab is NOT a deliverable.
 
 ## Reference
 
