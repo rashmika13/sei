@@ -230,7 +230,7 @@
 <tr>
   <td><strong>Afternoon</strong></td>
   <td>
-    <a href="computer-science/01-big-o-notation">Big O Notation</a>
+    <a href="computer-science/01-cs-big-o-notation">Big O Notation</a>
   </td>
   <td> Work on Project 1 </td>
   <td> Work on Project 1 </td>
