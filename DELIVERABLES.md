@@ -12,3 +12,10 @@
 |May 19| [CSS Flexbox Grid Lab](w02/d2/css-flexbox-grid-lab) | May 29 |
 |May 21| [jQuery Lab](w02/d4/jquery-lab.md) | May 29 |
 
+## Unit 2
+
+|Date Assigned|Description| Final Due Date |
+|---|---|---|
+|June 2|[Express Dev Skills](w04/d2/express-dev-skills-lab)| June 9 |
+|June 3|[Mongoose Flights Part 1, 2, and 3](w04/d5/mongoose-flights-lab-part-3.md)| June 10 |
+
