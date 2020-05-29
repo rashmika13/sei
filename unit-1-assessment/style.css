@@ -1,0 +1,44 @@
+body {
+  margin-top: 20%;
+}
+.count-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+#buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.count-display {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  background-color: #a9a9a9;
+  height: 63px;
+  width: 60px;
+  color: white;
+  border-radius: 3%;
+  margin: 10px 20px 20px 20px;
+  border-radius: 5pt;
+  font-size: 40px;
+}
+
+button:hover {
+  background-color: white;
+  color: #a9a9a9;
+}
+input {
+  height: 56px;
+  width: 100px;
+  margin: 10px -10px 0px -10px;
+  border: 4px solid #a9a9a9;
+  border-radius: 5pt;
+  font-size: 30px;
+  text-align: center;
+}
