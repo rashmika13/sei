@@ -17,5 +17,5 @@
 |Date Assigned|Description| Final Due Date |
 |---|---|---|
 |June 2|[Express Dev Skills](w04/d2/express-dev-skills-lab)| June 9 |
-|June 3|[Mongoose Flights Part 1, 2, and 3](w04/d5/mongoose-flights-lab-part-3.md)| June 10 |
+|June 3|[Mongoose Flights 1, 2, & 3](w04/d5/mongoose-flights-lab-part-3.md)| June 10 |
 
