@@ -1,5 +1,3 @@
-This presentation can be viewed [here](https://presentations.generalassemb.ly/07f9b2f08932561aa03cd2c17d38783b#/1)
----
 
 ![](https://i.imgur.com/vUOu9NW.jpg)
 <br>
