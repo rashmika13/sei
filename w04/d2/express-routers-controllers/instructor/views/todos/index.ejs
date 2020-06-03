@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= typeof title === 'undefined' ? 'Default Title' : title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Todos</h1>
+    <ul>
+      <% todos.forEach(function(t) { %>
+      <li><a href="/todos/<%= t.id %>"><%= t.todo %></a> - <%= t.done ? 'done' : 'not done' %></li>
+      <% }); %>
+    </ul>
+  </body>
+</html>

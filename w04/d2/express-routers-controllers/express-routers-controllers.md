@@ -793,7 +793,7 @@ Options:
 
 	```html
 	<body>
-	  <h1>Todo #<%= todoNum %></h1>
+	  <h1>Todo #<%= todo.id %></h1>
 	  <h3><%= todo.todo %></h3>
 	  <h3>Complete: <%= todo.done ? 'Yes' : 'No' %></h3>
 	</body>

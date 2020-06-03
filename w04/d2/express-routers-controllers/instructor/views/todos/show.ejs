@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= typeof title === 'undefined' ? 'Default Title' : title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <% if (todo) { %>
+    <h1>Todo #<%= todo.id %></h1>
+    <h3><%= todo.todo %></h3>
+    <h3>Complete: <%= todo.done ? 'Yes': 'No' %></h3>
+    <% } else { %>
+    <h3>Todo Not Found</h3>
+    <% } %>
+  </body>
+</html>
