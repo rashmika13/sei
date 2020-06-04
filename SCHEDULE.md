@@ -307,8 +307,8 @@
     <a href="w04/d3/mongoose-flights-lab-part-1.md">Mongoose Flights Lab part 1 (Deliverable)</a>
   </td>
   <td>
-    <a href="w04/d5/mongoose-referencing">Mongoose Referencing</a>
-    <a href="w04/d5/mongoose-flights-lab-part-3.md">Mongoose Flights Lab part 3 (Deliverable)</a>
+    <a href="w04/d4/mongoose-referencing">Mongoose Referencing</a>
+    <a href="w04/d4/mongoose-flights-lab-part-3.md">Mongoose Flights Lab part 3 (Deliverable)</a>
   </td>
   <td>
     GA Mental Health Day
@@ -330,7 +330,7 @@
     <a href="w04/d4/mongoose-flights-lab-part-2.md">Mongoose Flights Lab part 2 (Deliverable)</a>
   </td>
   <td>
-    <a href="w04/d5/mongoose-flights-lab-part-3.md">Mongoose Flights Lab part 3 (Deliverable)</a>
+    <a href="w04/d4/mongoose-flights-lab-part-3.md">Mongoose Flights Lab part 3 (Deliverable)</a>
   </td>
 </tr>
 
