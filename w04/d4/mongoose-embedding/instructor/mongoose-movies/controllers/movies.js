@@ -32,7 +32,7 @@ function best(req, res) {
 
 function show(req, res) {
   Movie.findById(req.params.id, function (err, movie) {
-    console.log(movie);
+    // console.log(movie);
     res.render('movies/show', { title: 'Movie Detail', movie });
   });
 }
