@@ -284,6 +284,7 @@
     <a href="w04/d3/mongodb-intro.md">Intro to MongoDB</a></br></br>
     <a href="w04/d3/mongoose-intro">Intro to Mongoose</a>
   </td>
+  <td>
     <a href="w04/d4/mongoose-embedding">Mongoose Embedding</a>
     <a href="w04/d4/mongoose-flights-lab-part-2.md">Mongoose Flights Lab part 2 (Deliverable)</a>
   </td>
