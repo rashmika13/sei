@@ -284,10 +284,12 @@
     <a href="w04/d3/mongodb-intro.md">Intro to MongoDB</a></br></br>
     <a href="w04/d3/mongoose-intro">Intro to Mongoose</a>
   </td>
+  <td>
     <a href="w04/d4/mongoose-embedding">Mongoose Embedding</a>
+    <a href="w04/d4/mongoose-flights-lab-part-2.md">Mongoose Flights Lab part 2 (Deliverable)</a>
   </td>
   <td>
-    <a href="w04/d5/mongoose-referencing">Mongoose Referencing</a>
+    GA Mental Health Day
   </td>
 </tr>
 
@@ -305,10 +307,11 @@
     <a href="w04/d3/mongoose-flights-lab-part-1.md">Mongoose Flights Lab part 1 (Deliverable)</a>
   </td>
   <td>
-    <a href="w04/d4/mongoose-flights-lab-part-2.md">Mongoose Flights Lab part 2 (Deliverable)</a>
+    <a href="w04/d4/mongoose-referencing">Mongoose Referencing</a>
+    <a href="w04/d4/mongoose-flights-lab-part-3.md">Mongoose Flights Lab part 3 (Deliverable)</a>
   </td>
   <td>
-    <a href="w04/d5/mongoose-flights-lab-part-3.md">Mongoose Flights Lab part 3 (Deliverable)</a>
+    GA Mental Health Day
   </td>
 </tr>
 
@@ -327,9 +330,83 @@
     <a href="w04/d4/mongoose-flights-lab-part-2.md">Mongoose Flights Lab part 2 (Deliverable)</a>
   </td>
   <td>
-    <a href="w04/d5/mongoose-flights-lab-part-3.md">Mongoose Flights Lab part 3 (Deliverable)</a>
+    <a href="w04/d4/mongoose-flights-lab-part-3.md">Mongoose Flights Lab part 3 (Deliverable)</a>
   </td>
 </tr>
 
 </tbody>
 </table>
+
+<!--
+### Week 5 (June 8 - 12)
+
+<table>
+<thead>
+<tr>
+  <td></td>
+  <th>Monday</th>
+  <th>Tuesday</th>
+  <th>Wednesday</th>
+  <th>Thursday</th>
+  <th>Friday</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+  <td><strong>Morning</strong></td>
+  <td>
+
+  </td>
+  <td>
+
+  </td>
+  <td>
+
+  </td>
+
+  </td>
+  <td>
+
+  </td>
+</tr>
+
+<tr>
+  <td><strong>Afternoon</strong></td>
+  <td>
+
+  </td>
+  <td>
+
+  </td>
+  <td>
+
+  </td>
+  <td>
+
+  </td>
+  <td>
+
+  </td>
+</tr>
+
+<tr>
+  <td><strong>Homework</strong></td>
+  <td>
+
+  </td>
+  <td>
+
+  </td>
+  <td>
+
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+</tr>
+
+</tbody>
+</table>
+-->
