@@ -1,0 +1,87 @@
+<%- include('../partials/header') %>
+
+<section id="show-page">
+  <div>Airline:</div>
+  <div><%= flight.airline %></div>
+  <div>Airport:</div>
+  <div><%= flight.airport %></div>
+  <div>Flight No:</div>
+  <div><%= flight.flightNo %></div>
+  <div>Departs:</div>
+  <div><%= flight.departs %></div>
+  <!-- start cast list -->
+
+  <!-- end cast list -->
+</section>
+<!-- add to cast form below this comment -->
+
+<br /><br />
+<h2>Destinations</h2>
+<form
+  id="add-destination-form"
+  method="POST"
+  action="/flights/<%= flight._id %>/destinations"
+>
+  <label
+    >Airport:
+    <select class="form-control" name="airport">
+        <% let locations = ['AUS','DFW','DEN','LAX','SAN'] %>
+        <% locations.splice(locations.indexOf(flight.airport), 1) %>
+        <% flight.destinations.forEach(function(f) { if(locations.includes(f.airport)){
+        locations.splice(locations.indexOf(f.airport),1);
+      }})%>
+        <% locations.forEach(function(location) { %>
+        <option value="<%= location %>"><%= location %></option>
+        <% }) %>
+      </select>
+  </label>
+
+  <label>Arrival: <input type="datetime-local" name="arrival" /> </label>
+
+  <input type="submit" value="Add Destination" />
+</form>
+
+
+<% if (flight.destinations.length) { %>
+<table>
+  <thead>
+    <tr>
+      <th>Airport</th>
+      <th>Arrival</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% flight.destinations.forEach(function(d) { %>
+    <tr>
+      <td><%= d.airport %></td>
+      <td><%= d.arrival.toLocaleDateString() %></td>
+      <td>
+        <form
+        action="/flights/<%= flight._id %>/destinations/<%= d._id %>?_method=DELETE"
+        id="delete-form"
+        method="POST"
+      >
+        <button type="submit">Delete</button>
+      </form>
+      </td>      
+    </tr>
+    <% }); %>
+  </tbody>
+</table>
+<% } else { %>
+<h5>No Destinations Yet</h5>
+ <% } %> 
+ <br>
+
+ <tbody>
+  <% tickets.forEach(function(t) { %>
+  <tr>
+    <td><%= t.seat %></td>
+    <td><%= t.price %></td>
+    </td> <%= t.flight %></td>     
+  </tr>
+  <% }); %>
+</tbody>
+ 
+ <a href="/flights/:id/tickets/new">New Ticket</a>
+ <%- include('../partials/footer') %> </a>
