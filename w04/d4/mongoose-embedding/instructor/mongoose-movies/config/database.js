@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/movies',
-  { useNewUrlParser: true, useCreateIndex: true }
-);
+mongoose.connect('mongodb://localhost/moviesdb', { useNewUrlParser: true, useCreateIndex: true });
 
 // shortcut to mongoose.connection objec
 const db = mongoose.connection;

@@ -337,7 +337,7 @@
 </tbody>
 </table>
 
-<!--
+
 ### Week 5 (June 8 - 12)
 
 <table>
@@ -356,57 +356,68 @@
 <tr>
   <td><strong>Morning</strong></td>
   <td>
-
+    <a href="w05/d1/consuming-3rd-party-apis">Consuming 3rd Party APIs</a></br></br>
+    <a href="w05/d1/consuming-apis-lab">Consuming APIs Lab</a>
   </td>
   <td>
-
+    <a href="w05/d2/producing-an-api-in-express">Producing an API in Express</a></br>
+    <a href="w05/d2/producing-api-lab">Producing an API Lab</a>
   </td>
   <td>
-
-  </td>
-
+    <a href="w05/d3/oauth-authentication">Oauth Authentication</a>
   </td>
   <td>
-
+    <a href="w05/d4/ajax-using-fetch-puppies">AJAX using Fetch</a></br>
+    <a href="w05/d4/ajax-using-fetch-lab.md">AJAX Fetch Lab</a>
+  </td>
+  <td>
+    <a href="w05/d5/regular-expressions.md">Regular Expressions</a></br></br>
+    Closures
   </td>
 </tr>
 
 <tr>
   <td><strong>Afternoon</strong></td>
   <td>
-
+    <a href="w05/d1/js-promises">JS Promises</a></br></br>
+    <a href="w05/d1/js-promises-lab">JS Promises Lab (Deliverable)</a>
   </td>
   <td>
-
+    Collabathon - Group Work
   </td>
   <td>
-
+    Finish OAuth Lesson </br>
+    Continue Collabathon </br>
+    Finish Labs / Extra Challenges
   </td>
   <td>
-
+    Build App with AJAX and 3rd Party API
   </td>
   <td>
-
+    Intro to Sorting </br>
+    Student Share: Project 2
   </td>
 </tr>
 
 <tr>
   <td><strong>Homework</strong></td>
   <td>
-
+    <a href="w05/d1/js-promises-lab">JS Promises Lab (Deliverable)</a>
   </td>
   <td>
-
+    <a href="w05/d2/producing-api-lab">Producing an API Lab</a></br>
+    Project 2 Planning
   </td>
   <td>
-
+    Catch up on Labs / Extra Challenges / Project 2 Planning
   </td>
   <td>
+    Intro to Sorting CS Modules
   </td>
   <td>
+    Work on Project 2
   </td>
 </tr>
 
 </tbody>
 </table>
--->

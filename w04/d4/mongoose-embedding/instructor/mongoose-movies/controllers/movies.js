@@ -4,17 +4,35 @@ module.exports = {
   index,
   show,
   new: newMovie,
-  create
+  create,
+  best,
 };
 
 function index(req, res) {
-  Movie.find({}, function(err, movies) {
+  // use query strings in the url to change the Mongo query object
+  let queryObj = {};
+  if (req.query.filter === 'best') {
+    queryObj = { 'reviews.rating': { $gt: 3 } };
+  }
+
+  // Mongoose query builder
+  // Movie.find().where('reviews.rating').gt(3).exec(function(err, movies) { ... })
+
+  Movie.find(queryObj, function (err, movies) {
+    res.render('movies/index', { title: 'All Movies', movies });
+  });
+}
+
+// example of above, just using a different route instead of query strings
+function best(req, res) {
+  Movie.find({ 'reviews.rating': 5 }, function (err, movies) {
     res.render('movies/index', { title: 'All Movies', movies });
   });
 }
 
 function show(req, res) {
-  Movie.findById(req.params.id, function(err, movie) {
+  Movie.findById(req.params.id, function (err, movie) {
+    // console.log(movie);
     res.render('movies/show', { title: 'Movie Detail', movie });
   });
 }
@@ -34,7 +52,7 @@ function create(req, res) {
     if (req.body[key] === '') delete req.body[key];
   }
   const movie = new Movie(req.body);
-  movie.save(function(err) {
+  movie.save(function (err) {
     // one way to handle errors
     if (err) return res.redirect('/movies/new');
     console.log(movie);
