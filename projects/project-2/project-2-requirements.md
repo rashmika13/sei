@@ -76,10 +76,6 @@ You will have a maximum of 10 minutes to present your project following these gu
 
 ☐ **Have at least 2 data entities**.  One entity that represents the main functional idea for your app and another with a **1:M** or **M:M** relationship with that main entity (embedded or referenced). This do not include a User model if you choose to include authentication.
 
-☐ **Use OAuth authentication**.
-
-☐ Implement basic **authorization** that restricts access to features that need a logged in user in order to work (typically CUD data operations) by "protecting" those routes (using the `isLoggedIn` middleware from the OAuth lesson) from anonymous users. In addition, ensure that editing and deletion of data can only be done by the user that created that data (this is done in the controller - refer to the Guide to User-Centric CRUD).
-
 ☐ Have **full-CRUD data operations** somewhere within the app's features. For example, you can have functionality that **C**reates & **U**pdates a _post_ and satisfy **D**elete functionality by implementing the ability to delete _comments_.
 
 ☐ Be styled such that the app looks and feels similar to apps we use on a daily basis - in other words, **it should have a consistent and polished user interface.**
