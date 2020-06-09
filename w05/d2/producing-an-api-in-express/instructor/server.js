@@ -1,18 +1,23 @@
 const express = require('express');
 const logger = require('morgan');
+const cors = require('cors');
 
 // load secrets from .env file
 require('dotenv').config();
 require('./database');
 
-const apiRouter = require('./routes/api');
+const puppyApiRouter = require('./routes/api/puppies');
 
 const app = express();
+
+app.use(cors());
 
 app.use(logger('dev'));
 app.use(express.json());
 
-app.use('/api', apiRouter);
+// app.use(express.urlencoded())
+
+app.use('/api', puppyApiRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
