@@ -74,7 +74,7 @@ You will have a maximum of 10 minutes to present your project following these gu
 
 ### Your App Must:
 
-☐ **Have at least 2 data entities**.  One entity that represents the main functional idea for your app and another with a **1:M** or **M:M** relationship with that main entity (embedded or referenced). This do not include a User model if you choose to include authentication.
+☐ **Have at least 2 data entities**.  One entity that represents the main functional idea for your app and another with a **1:M** or **M:M** relationship with that main entity (embedded or referenced).
 
 ☐ Have **full-CRUD data operations** somewhere within the app's features. For example, you can have functionality that **C**reates & **U**pdates a _post_ and satisfy **D**elete functionality by implementing the ability to delete _comments_.
 
@@ -132,7 +132,7 @@ can provide inspiration for this project as most are full-stack CRUD apps.  That
 
 #### Do Not Choose Non-CRUD Applications Such As:
 
-- Games
+- Games (Unless you add CRUD functionality like high scores)
 - Portfolio, or presentational pages
 - Marketing or content oriented websites
 
@@ -157,7 +157,7 @@ So much of the Internet is CRUD apps!
   - Customer management
   - Payroll/Accounting
 
-Many simple apps can have their functionality enhanced by implementing the ability of users to comment on, and/or like/favorite items. 
+Many simple apps can have their functionality enhanced by implementing the ability of users to comment on, and/or like/favorite items. Another way to think of creative ideas is to research interesting or funny APIs and build something simple that uses that data.
 
 Another piece of advice:  If you choose to develop an app that has the concept of a shopping cart (eCommerce app), do not attempt to implement the actual payment functionality.
 
