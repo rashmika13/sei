@@ -5,12 +5,14 @@ const logger = require('morgan');
 require('dotenv').config();
 require('./database');
 
+const apiRouter = require('./routes/api');
+
 const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
 
-// app.use('/', routes);
+app.use('/api', apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
