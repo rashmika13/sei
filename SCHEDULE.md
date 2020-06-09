@@ -383,12 +383,13 @@
     <a href="w05/d1/js-promises-lab">JS Promises Lab (Deliverable)</a>
   </td>
   <td>
-    Collabathon - Group Work
+    <a href="https://git.generalassemb.ly/sei-toronto/sei-4-collab/mongo-burgers">Collabathon - Mongo Burgers</a></br></br>
+    <a href="https://git.generalassemb.ly/sei-toronto/sei-4-collab/express-vampires">Collabathon - Express Vampires</a>
   </td>
   <td>
-    Finish OAuth Lesson </br>
-    Continue Collabathon </br>
-    Finish Labs / Extra Challenges
+    Finish OAuth Lesson </br></br>
+    <a href="https://git.generalassemb.ly/sei-toronto/sei-4-collab/express-vampires">Finish Express Vampires</a></br></br>
+    Finish Labs / <a href="extra-challenges/">Extra Challenges</a>
   </td>
   <td>
     Build App with AJAX and 3rd Party API
