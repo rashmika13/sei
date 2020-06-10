@@ -4,28 +4,42 @@ const Flight = require("../models/flight");
 module.exports = {
   new: newTicket,
   create,
+  // delete: deleteTicket,
 };
 
-// function addToCast(req, res) {
-//   Movie.findById(req.params.id, function (err, movie) {
-//     movie.cast.push(req.body.performerId);
-//     movie.save(function (err) {
-//       res.redirect(`/movies/${movie._id}`);
-//     });
+function create(req, res) {
+  req.body.flight = req.params.id;
+  Ticket.create(req.body, function (err, ticket) {
+    console.log(ticket);
+    res.redirect("/flights/" + req.params.id);
+  });
+}
+// function create(req, res) {
+//   req.body.flight = req.params.id;
+//   console.log(req.body);
+//   const newTicket = new Ticket(req.body);
+//   newTicket.save(function (err) {
+//     console.log(newTicket);
+//     res.redirect("/flights/" + req.params.id);
 //   });
 // }
 
-function create(req, res) {
-  Ticket.create(req.body, function (err, ticket) {
-    res.redirect("/tickets/new");
-  });
-}
-
 function newTicket(req, res) {
-  Ticket.find({}, function (err, tickets) {
+  Flight.findById(req.params.id, function (err, flights) {
     res.render("tickets/new", {
       title: "Add Ticket",
-      tickets,
+      flights,
     });
   });
 }
+
+// function deleteTicket(req, res) {
+//   Flight.findById(req.params.id, function (err, flight) {
+//     Ticket.findOneAndDelete(req.body, function (err, ticket) {
+//       console.log(ticket);
+//       ticket.save(function (err) {
+//         res.render(`/flights/${flight._id}`);
+//       });
+//     });
+//   });
+// }

@@ -77,11 +77,19 @@
   <% tickets.forEach(function(t) { %>
   <tr>
     <td><%= t.seat %></td>
-    <td><%= t.price %></td>
-    </td> <%= t.flight %></td>     
+    <td><%= t.price %></td>  
+    <!-- <td>
+      <form
+      action="/flights/<%= flight._id %>?_method=DELETE"
+      id="delete-form"
+      method="POST"
+    >
+      <button type="submit">Delete</button>
+    </form>
+    </td>     -->
   </tr>
   <% }); %>
 </tbody>
  
- <a href="/flights/:id/tickets/new">New Ticket</a>
+ <a href="/flights/<%= flight._id %>/tickets/new">New Ticket</a>
  <%- include('../partials/footer') %> </a>
