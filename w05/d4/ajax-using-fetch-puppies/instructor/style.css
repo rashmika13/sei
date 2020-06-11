@@ -1,0 +1,7 @@
+main {
+    display: none;
+}
+
+#error-msg {
+    color: red
+}

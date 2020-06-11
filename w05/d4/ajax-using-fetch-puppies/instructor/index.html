@@ -3,9 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="style.css" />
-    <script src="script.js"></script>
+    <title>Puppy SPA</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script defer src="script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <button id="index-view-btn">List Puppies</button>
+      <button id="create-view-btn">Add a Puppy</button>
+    </nav>
+    <p id="error-msg"></p>
+
+    <!-- index view -->
+    <main id="index-view">
+      <h1>Puppies List</h1>
+      <section></section>
+    </main>
+
+    <!-- create view -->
+    <main id="create-view">
+      <h1>Add a Puppy</h1>
+      <section>
+        <div>Name: <input /></div>
+        <div>Breed: <input /></div>
+        <div>Age: <input type="number" /></div>
+        <button id="add-puppy-btn">Add Puppy</button>
+      </section>
+    </main>
+  </body>
 </html>
