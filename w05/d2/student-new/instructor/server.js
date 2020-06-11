@@ -1,25 +1,20 @@
-const express = require("express");
-const logger = require("morgan");
-const cors = require("cors");
+const express = require('express');
+const logger = require('morgan');
 
 // load secrets from .env file
-require("dotenv").config();
-require("./database");
-
-const puppyApiRouter = require("./routes/api/puppies");
+require('dotenv').config();
+require('./database');
 
 const app = express();
 
-app.use(logger("dev"));
+app.use(logger('dev'));
 app.use(express.json());
 
-app.use(cors());
-
-app.use("/api", puppyApiRouter);
+// app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
-  var err = new Error("Not Found");
+  var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
@@ -28,7 +23,7 @@ app.use(function (req, res, next) {
 
 // development error handler
 // will print stacktrace
-if (app.get("env") === "development") {
+if (app.get('env') === 'development') {
   app.use(function (err, req, res, next) {
     res.status(err.status || 500);
     res.json({
@@ -51,5 +46,5 @@ app.use(function (err, req, res, next) {
 const port = process.env.PORT || 3000;
 
 app.listen(port, function () {
-  console.log("Express server started");
+  console.log('Express server started');
 });

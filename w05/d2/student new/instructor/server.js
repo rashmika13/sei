@@ -1,21 +1,16 @@
 const express = require("express");
 const logger = require("morgan");
-const cors = require("cors");
 
 // load secrets from .env file
-require("dotenv").config();
+require("./node_modules/dotenv").config();
 require("./database");
-
-const puppyApiRouter = require("./routes/api/puppies");
 
 const app = express();
 
 app.use(logger("dev"));
 app.use(express.json());
 
-app.use(cors());
-
-app.use("/api", puppyApiRouter);
+// app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
