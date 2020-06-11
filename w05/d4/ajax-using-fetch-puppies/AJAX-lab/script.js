@@ -1,8 +1,8 @@
 /*-- constants --*/
-const BASE_URL = "https://sei-puppies-api.herokuapp.com/api/puppies/";
+const BASE_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=2f1028d";
 
 /*-- app's state vars --*/
-let currentView, puppies;
+let currentView, movies;
 
 /*-- cached elements --*/
 const indexViewEl = document.getElementById("index-view");
