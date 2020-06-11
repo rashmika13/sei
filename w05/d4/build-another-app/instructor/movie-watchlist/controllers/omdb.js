@@ -2,12 +2,7 @@ const axios = require('axios');
 
 module.exports = {
   search,
-  homepage,
 };
-
-async function homepage(req, res) {
-  res.render('index', {});
-}
 
 // async example of proxying an API call that uses an API key
 // this allows us to keep our API key secret on the server and not expose it to the browser
