@@ -44,7 +44,7 @@ function login(req, res, next) {
         // could change to redirect back to form with error message
         return next(Error('Invalid Credentials'));
       }
-      user.comparePassword(req.body.pw, (err, isMatch) => {
+      user.comparePassword(req.body.password, (err, isMatch) => {
         if (isMatch) {
           req.logIn(user, function (err) {
             if (err) return next(err);
@@ -66,6 +66,7 @@ function signupForm(req, res) {
 }
 
 async function signup(req, res, next) {
+  // validate strong password
   let user = new User(req.body);
   try {
     user = await user.save();
