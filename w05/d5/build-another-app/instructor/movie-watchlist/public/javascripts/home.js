@@ -17,7 +17,7 @@ async function handleSearch(evt) {
   evt.preventDefault();
   const query = searchInputEl.value.replace(/^\s*/, '');
   if (query) {
-    const data = await fetch(`/api/search?q=${query}`).then((res) => res.json());
+    const data = await fetch(`/api/search?q=${query}`).then((result) => result.json());
     console.log(data);
     moviesDb = data.reduce((db, movie) => {
       db[movie.imdbID] = movie;
@@ -38,7 +38,7 @@ async function handleAddMovie(evt) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(movie),
-      }).then((res) => res.json());
+      }).then((result) => result.json());
       moviesDb[imdbID].inMyMovies = true;
       renderMovieEl(moviesDb[imdbID]);
     } catch (err) {
@@ -66,7 +66,9 @@ function movieCardHTML(movie) {
     <div class="card-body">
       <h5 class="card-title">${movie.title}</h5>
       ${
-        movie.inMyMovies
+        !__USER_ID__
+          ? ''
+          : movie.inMyMovies
           ? '<p>In List :)</p>'
           : `<button data-imdb-id="${movie.imdbID}" class="btn btn-primary">Add to List</button>`
       }

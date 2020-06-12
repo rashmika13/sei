@@ -10,7 +10,7 @@ const myMoviesApiCtrl = require('./controllers/api/my-movies');
 const isLoggedIn = require('./middleware/isLoggedIn');
 
 router.get('/', homeCtrl.index);
-router.get('/watchlist', myMoviesCtrl.index);
+router.get('/watchlist', isLoggedIn, myMoviesCtrl.index);
 
 // user auth
 router.get('/login', usersCtrl.loginForm);
@@ -22,5 +22,6 @@ router.get('/logout', usersCtrl.logout);
 // api routes
 router.get('/api/search', omdbApiCtrl.search);
 router.post('/api/my-movies', isLoggedIn, myMoviesApiCtrl.create);
+router.delete('/api/my-movies/:id', isLoggedIn, myMoviesApiCtrl.deleteOne);
 
 module.exports = router;

@@ -10,6 +10,7 @@
     />
 
     <link rel="stylesheet" href="/stylesheets/home.css" />
+    <script defer src="/javascripts/watchlist.js"></script>
   </head>
   <body>
     <%- include('../partials/navbar') %>
@@ -23,7 +24,7 @@
           <img src="<%= movie.img %>" class="card-img-top" alt="<%= movie.title %>">
           <div class="card-body">
             <h5 class="card-title"><%= movie.title %></h5>
-            <button data-id="${movie._id}" class="btn btn-danger">Remove</button>
+            <button data-id="<%= movie._id %>" class="btn btn-danger">Remove</button>
           </div>
         </div>
       <% }) %>

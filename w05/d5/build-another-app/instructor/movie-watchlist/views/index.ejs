@@ -10,6 +10,13 @@
     />
 
     <link rel="stylesheet" href="/stylesheets/home.css" />
+    <script>
+      <% if (user) { %>
+        const __USER_ID__ = '<%= user._id %>'
+      <% } else { %>
+        const __USER_ID__ = null
+      <% } %>
+    </script>
     <script defer src="/javascripts/home.js"></script>
   </head>
   <body>
