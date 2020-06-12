@@ -10,10 +10,12 @@ const puppyApiRouter = require("./routes/api/puppies");
 
 const app = express();
 
+app.use(cors());
+
 app.use(logger("dev"));
 app.use(express.json());
 
-app.use(cors());
+// app.use(express.urlencoded())
 
 app.use("/api", puppyApiRouter);
 
