@@ -360,19 +360,19 @@
     <a href="w05/d1/consuming-apis-lab">Consuming APIs Lab</a>
   </td>
   <td>
-    <a href="w05/d2/producing-an-api-in-express">Producing an API in Express</a></br>
+    <a href="w05/d2/producing-an-api-in-express">Producing an API in Express</a></br></br>
     <a href="w05/d2/producing-api-lab">Producing an API Lab</a>
   </td>
   <td>
     <a href="w05/d3/oauth-authentication">Oauth Authentication</a>
   </td>
   <td>
-    <a href="w05/d4/ajax-using-fetch-puppies">AJAX using Fetch</a></br>
+    <a href="w05/d4/ajax-using-fetch-puppies">AJAX using Fetch</a></br></br>
     <a href="w05/d4/ajax-using-fetch-lab.md">AJAX Fetch Lab</a>
   </td>
   <td>
-    <a href="w05/d5/regular-expressions.md">Regular Expressions</a></br></br>
-    Closures
+    <a href="w05/d5/build-another-app">Finish Movie Watchlist</a></br></br>
+    <a href="w05/d5/regular-expressions.md">Regular Expressions</a>
   </td>
 </tr>
 
@@ -383,18 +383,17 @@
     <a href="w05/d1/js-promises-lab">JS Promises Lab (Deliverable)</a>
   </td>
   <td>
-    <a href="https://git.generalassemb.ly/sei-toronto/sei-4-collab/mongo-burgers">Collabathon - Mongo Burgers</a></br>
+    <a href="https://git.generalassemb.ly/sei-toronto/sei-4-collab/mongo-burgers">Collabathon - Mongo Burgers</a>
   </td>
   <td>
     Finish OAuth Lesson </br></br>
-    <a href="https://git.generalassemb.ly/sei-toronto/sei-4-collab/express-vampires">Collabathon - Express Vampires</a></br></br>
     Finish Labs / <a href="extra-challenges/">Extra Challenges</a>
   </td>
   <td>
-    Build App with AJAX and 3rd Party API
+    <a href="w05/d4/build-another-app">Build an app with AJAX and 3rd party API - Movie Watchlist</a>
   </td>
   <td>
-    Intro to Sorting </br>
+    <a href="https://git.generalassemb.ly/sei-toronto/sei-4-collab/express-vampires">Collabathon - Express Vampires</a></br></br>
     Student Share: Project 2
   </td>
 </tr>
@@ -405,17 +404,19 @@
     <a href="w05/d1/js-promises-lab">JS Promises Lab (Deliverable)</a>
   </td>
   <td>
-    <a href="w05/d2/producing-api-lab">Producing an API Lab</a></br>
+    <a href="w05/d2/producing-api-lab">Producing an API Lab</a></br></br>
     Project 2 Planning
   </td>
   <td>
     Catch up on Labs / Extra Challenges / Project 2 Planning
   </td>
   <td>
-    Intro to Sorting CS Modules
+    Catch up on Labs / Extra Challenges / Project 2 Planning
   </td>
   <td>
-    Work on Project 2
+    Work on Project 2</br></br>
+    <a href="w05/d5/guide-to-add-feature-to-web-app.md">Review: Guide to Add Feature to Web App</a></br></br>
+    <a href="w05/d5/guide-to-user-centric-crud.md">Review: Guide to User-Centric CRUD</a>
   </td>
 </tr>
 

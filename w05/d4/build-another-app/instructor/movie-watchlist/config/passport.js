@@ -8,7 +8,7 @@ passport.use(
   new LocalStrategy(
     {
       usernameField: 'email',
-      passwordField: 'pw',
+      passwordField: 'password',
     },
     function (email, password, done) {
       User.findOne({ email })
