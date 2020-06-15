@@ -59,7 +59,7 @@ This will be your shared class repo! Guides, in-class labs and code samples, and
     </tr>
     <tr>
       <td align="center">5</td>
-      <td>Consuming & Producing APIs<br>Authentication using OAuth<br>Regular Expressions</td>
+      <td>Consuming & Producing APIs<br>Authentication using OAuth<br>AJAX<br>Regular Expressions</td>
     </tr>
     <tr>
       <td align="center">6</td>
@@ -87,7 +87,7 @@ This will be your shared class repo! Guides, in-class labs and code samples, and
     </tr>
     <tr>
       <td align="center">11</td>
-      <td>Web Sockets<br>AJAX<br>Full-stack React<br>Token-based Authentication</td>
+      <td>Web Sockets<br>Full-stack React<br>Token-based Authentication</td>
     </tr>
     <tr>
       <td align="center">12</td>
