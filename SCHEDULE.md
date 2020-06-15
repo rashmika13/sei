@@ -422,3 +422,60 @@
 
 </tbody>
 </table>
+
+### Week 6 (June 15 - 19)
+
+<table>
+<thead>
+<tr>
+  <td></td>
+  <th>Monday</th>
+  <th>Tuesday</th>
+  <th>Wednesday</th>
+  <th>Thursday</th>
+  <th>Friday</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+  <td><strong>Morning</strong></td>
+  <td>
+    <a href="w06/atlas-hosted-mongodb.md">MongoDB Atlas</a></br></br>
+    Work on Project 2
+  </td>
+  <td>
+    <a href="w06/deploy-express-heroku.md">Deploy Express App to Heroku</a></br></br>
+    Work on Project 2
+  </td>
+  <td>
+    <a href="computer-science/03-cs-intro-to-sorting">Intro to Sorting</a></br></br>
+    Work on Project 2
+  </td>
+  <td> Work on Project 2 </td>
+  <td> Project 2 Presentations </td>
+</tr>
+
+<tr>
+  <td><strong>Afternoon</strong></td>
+  <td> Work on Project 2 </td>
+  <td> Work on Project 2 </td>
+  <td> Work on Project 2 </td>
+  <td> Work on Project 2 </td>
+  <td> Project 2 Assessment </td>
+</tr>
+
+<tr>
+  <td><strong>Homework</strong></td>
+  <td> Project 2 </td>
+  <td>
+    <a href="https://my.generalassemb.ly/activities/818">MyGA - Intro to Sorting Algorithms</a>
+  </td>
+  <td> Project 2 </td>
+  <td> Project 2 </td>
+  <td> Review Unit 2 & Finish Labs / Project 2</td>
+</tr>
+
+</tbody>
+</table>
+
