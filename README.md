@@ -115,7 +115,7 @@ Graduation requires that 80% of deliverables be completed (working) and delivere
 
 [Link to the Deliverable Schedule](./DELIVERABLES.md)
 
-[Link to submit Deliverables](https://docs.google.com/forms/d/e/1FAIpQLSfUjzetwbpRalbXePBclpl49sYW-R-Z6qCiGa-2StW55oU0kA/viewform?usp=sf_link)
+[Link to submit Deliverables](https://git.generalassemb.ly/sei-toronto/sei-4-links)
 
 ### Class Repo Structure
 
