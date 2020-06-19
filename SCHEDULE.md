@@ -479,3 +479,83 @@
 </tbody>
 </table>
 
+### Week 7 (June 22 - 26)
+
+<table>
+<thead>
+<tr>
+  <td></td>
+  <th>Monday</th>
+  <th>Tuesday</th>
+  <th>Wednesday</th>
+  <th>Thursday</th>
+  <th>Friday</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+  <td><strong>Morning</strong></td>
+  <td>
+    <a href="w07/d1/sql-intro.md">SQL Intro</a></br></br>
+    <a href="w07/d1/sql-lab">Lab: Carmen Sandiego SQL (Deliverable)</a>
+  </td>
+  <td>
+    <a href="w07/d2/python-intro">Intro to Python</a></br></br>
+    <a href="w07/d2/python-control-flow">Control Flow in Python</a>
+  </td>
+  <td>
+    <a href="w07/d3/python-functions.md">Python Functions</a></br></br>
+    <a href="w07/d3/python-functions-lab.md">Lab: Python Functions (Deliverable)</a>
+  </td>
+  <td>
+    <a href="w07/d4/python-classes.md">Python Classes</a>
+  </td>
+  <td>
+    <a href="w07/d5/django-intro">Intro to Django</a></br></br>
+    Let's Build a Django App
+  </td>
+</tr>
+
+<tr>
+  <td><strong>Afternoon</strong></td>
+  <td>
+    <a href="w07/d1/relational-data-modeling.md">Relational Data Modeling</a></br></br>
+    <a href="w07/d1/data-modeling-lab.md">Lab: Relational Data Modeling</a>
+  </td>
+  <td>
+    <a href="w07/d2/python-containers">Python Containers</a></br></br>
+    <a href="w07/d2/control-flow-lab">Lab: Control Flow (Deliverable)</a></br></br>
+    <a href="w07/d2/python-containers/containers-lab.md">Lab: Python Containers (Deliverable)</a>
+  </td>
+  <td>In Class Collabathon & Group Work</td>
+  <td>
+    <a href="w07/d4/py-pac-poe-lab">Lab: Py Pac Poe</a></br></br>
+    <a href="w07/d4/python-decorators.md">Python Decorators (Self Study)</a>
+  </td>
+  <td>
+    <a href="w07/d5/django-urls-views-templates">Django Urls, Views and Templates</a>
+  </td>
+</tr>
+
+<tr>
+  <td><strong>Homework</strong></td>
+  <td>
+    <a href="w07/d1/sql-lab">Lab: Carmen Sandiego SQL (Deliverable)</a>
+  </td>
+  <td>
+    <a href="w07/d2/control-flow-lab">Lab: Control Flow (Deliverable)</a></br></br>
+    <a href="w07/d2/python-containers/containers-lab.md">Lab: Python Containers (Deliverable)</a>
+  </td>
+  <td>
+    <a href="w07/d3/python-functions-lab.md">Lab: Python Functions (Deliverable)</a>
+  </td>
+  <td>
+    <a href="w07/d4/py-pac-poe-lab">Lab: Py Pac Poe</a>
+  </td>
+  <td>
+    Finish the Django Tutorials
+  </td>
+</tr>
+</tbody>
+</table>
