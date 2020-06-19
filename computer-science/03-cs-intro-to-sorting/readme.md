@@ -18,10 +18,5 @@ By the end of this lesson, you will be able to:
 ## Prerequisites
 * Big O Notation
 
-## Duration
-1.5 hours total:
-* 0.5 hour myGA
-* 1 hour in class
-
 ## Additional Reading
 * Review the most common types of sorting-related [interview questions](https://www.techiedelight.com/sorting-interview-questions/).
