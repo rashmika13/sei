@@ -20,3 +20,10 @@
 |June 3|[Mongoose Flights 1, 2, & 3](w04/d5/mongoose-flights-lab-part-3.md)| June 10 |
 |June 8|[JS Promises Lab](w05/d1/js-promises-lab)| June 15 |
 
+## Unit 3
+
+|Date Assigned|Description| Final Due Date |
+|---|---|---|
+|June 22|[Carmen Sandiego SQL Lab](w07/d1/sql-lab)| June 29 |
+|June 23|[Python Control Flow Lab](w07/d2/control-flow-lab)| June 30 |
+|June 23|[Python Containers Lab](w07/d2/python-containers/containers-lab.md)| June 30 |
