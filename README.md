@@ -59,7 +59,7 @@ This will be your shared class repo! Guides, in-class labs and code samples, and
     </tr>
     <tr>
       <td align="center">5</td>
-      <td>Consuming & Producing APIs<br>Authentication using OAuth<br>Regular Expressions</td>
+      <td>Consuming & Producing APIs<br>Authentication using OAuth<br>AJAX<br>Regular Expressions</td>
     </tr>
     <tr>
       <td align="center">6</td>
@@ -87,7 +87,7 @@ This will be your shared class repo! Guides, in-class labs and code samples, and
     </tr>
     <tr>
       <td align="center">11</td>
-      <td>Web Sockets<br>AJAX<br>Full-stack React<br>Token-based Authentication</td>
+      <td>Web Sockets<br>Full-stack React<br>Token-based Authentication</td>
     </tr>
     <tr>
       <td align="center">12</td>
@@ -115,7 +115,7 @@ Graduation requires that 80% of deliverables be completed (working) and delivere
 
 [Link to the Deliverable Schedule](./DELIVERABLES.md)
 
-[Link to submit Deliverables](https://docs.google.com/forms/d/e/1FAIpQLSfUjzetwbpRalbXePBclpl49sYW-R-Z6qCiGa-2StW55oU0kA/viewform?usp=sf_link)
+[Link to submit Deliverables](https://git.generalassemb.ly/sei-toronto/sei-4-links)
 
 ### Class Repo Structure
 
