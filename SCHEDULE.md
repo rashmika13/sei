@@ -528,10 +528,11 @@
     <a href="w07/d2/control-flow-lab">Lab: Control Flow (Deliverable)</a></br></br>
     <a href="w07/d2/python-containers/containers-lab.md">Lab: Python Containers (Deliverable)</a>
   </td>
-  <td>In Class Collabathon & Group Work</td>
+  <td>
+    <a href="w07/d4/python-decorators.md">Python Decorators</a></br></br>
+    In Class SQL Collabathon</td>
   <td>
     <a href="w07/d4/py-pac-poe-lab">Lab: Py Pac Poe</a></br></br>
-    <a href="w07/d4/python-decorators.md">Python Decorators (Self Study)</a>
   </td>
   <td>
     <a href="w07/d5/django-urls-views-templates">Django Urls, Views and Templates</a>
