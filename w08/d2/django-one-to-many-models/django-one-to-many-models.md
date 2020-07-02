@@ -405,7 +405,7 @@ Note that our custom form inherits from `ModelForm` and has a nested `class Meta
 
 Many of the attributes in the `Meta` class are in common with CBVs because the CBV was using them behind the scenes to create a ModelForm as previously mentioned.
 
-For more options, check out the [Django ModelForms documentation](https://docs.djangoproject.com/en/2.1/topics/forms/modelforms/#modelform).
+For more options, check out the [Django ModelForms documentation](https://docs.djangoproject.com/en/3.0/topics/forms/modelforms/#modelform).
 
 #### Passing an Instance of `FeedingForm`
 
@@ -769,6 +769,6 @@ Congrats on using a custom Model method to implement business logic!
 
 ## Resources
 
-[Django Model API](https://docs.djangoproject.com/en/2.1/ref/models/)
+[Django Model API](https://docs.djangoproject.com/en/3.0/ref/models/)
 
-[Django ModelForms](https://docs.djangoproject.com/en/2.1/topics/forms/modelforms/#modelform)
+[Django ModelForms](https://docs.djangoproject.com/en/3.0/topics/forms/modelforms/#modelform)

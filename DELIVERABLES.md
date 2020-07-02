@@ -28,3 +28,4 @@
 |June 23|[Python Control Flow Lab](w07/d2/control-flow-lab)| June 30 |
 |June 23|[Python Containers Lab](w07/d2/python-containers/containers-lab.md)| June 30 |
 |June 24|[Python Functions Lab](w07/d3/python-functions-lab.md)| July 1 |
+|June 29| Django Collector Lab - Redo Django Lessons | July 10 |
