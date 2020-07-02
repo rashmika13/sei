@@ -560,3 +560,106 @@
 </tr>
 </tbody>
 </table>
+
+
+### Week 8 (June 29 - July 3)
+
+<table>
+<thead>
+<tr>
+  <td></td>
+  <th>Monday</th>
+  <th>Tuesday</th>
+  <th>Wednesday</th>
+  <th>Thursday</th>
+  <th>Friday</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+  <td><strong>Morning</strong></td>
+  <td>
+    <a href="w08/d1/intro-to-django-models">Intro to Django Models</a>
+  </td>
+  <td>
+    <a href="w08/d2/django-one-to-many-models">Django One to Many Models</a>
+  </td>
+  <td>Canada Day</td>
+  <td>
+    <a href="w08/d4/uploading-images-django">Uploading Images</a>
+  </td>
+  <td>
+    <a href="w08/d5/django-authentication">Django Authentication</a>
+  </td>
+</tr>
+
+<tr>
+  <td><strong>Afternoon</strong></td>
+  <td>
+    <a href="w08/d1/django-class-views">Django Class Views</a>
+  </td>
+  <td>
+    <a href="w08/d2/django-many-to-many-models">Django Many to Many Models</a>
+  </td>
+  <td>Canada Day</td>
+  <td>Group Work, Plan pitch for Project 3</td>
+  <td>Pitch and work on Project 3</td>
+</tr>
+
+<tr>
+  <td><strong>Homework</strong></td>
+  <td>Collector Lab</td>
+  <td>Collector Lab</td>
+  <td>Collector Lab</td>
+  <td>Collector Lab & Group Pitch</td>
+  <td>Project 3</td>
+</tr>
+</tbody>
+</table>
+
+<!-- 
+### Week 9 (July 6 - 10)
+
+<table>
+<thead>
+<tr>
+  <td></td>
+  <th>Monday</th>
+  <th>Tuesday</th>
+  <th>Wednesday</th>
+  <th>Thursday</th>
+  <th>Friday</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+  <td><strong>Morning</strong></td>
+  <td>Project 3</td>
+  <td>Project 3</td>
+  <td>Project 3</td>
+  <td>Project 3</td>
+  <td>Project 3 Presentations</td>
+</tr>
+
+<tr>
+  <td><strong>Afternoon</strong></td>
+  <td>Project 3</td>
+  <td>Project 3</td>
+  <td>Project 3</td>
+  <td>Project 3</td>
+  <td>Unit 3 Assessment</td>
+</tr>
+
+<tr>
+  <td><strong>Homework</strong></td>
+  <td>Project 3</td>
+  <td>Project 3</td>
+  <td>Project 3</td>
+  <td>Project 3</td>
+  <td>Review</td>
+</tr>
+</tbody>
+</table>
+-->
