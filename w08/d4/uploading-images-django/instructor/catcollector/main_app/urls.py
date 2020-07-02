@@ -11,6 +11,7 @@ urlpatterns = [
   path('cats/<int:pk>/delete/', views.CatDelete.as_view(), name='cats_delete'),
   path('cats/<int:cat_id>/add_feeding/', views.add_feeding, name='add_feeding'),
   # associate a toy with a cat (M:M)
+  path('cats/<int:cat_id>/add_photo/', views.add_photo, name='add_photo'),
   path('cats/<int:cat_id>/assoc_toy/<int:toy_id>/', views.assoc_toy, name='assoc_toy'),
   # unassociate a toy and cat
   path('cats/<int:cat_id>/unassoc_toy/<int:toy_id>/', views.unassoc_toy, name='unassoc_toy'),
