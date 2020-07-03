@@ -5,19 +5,27 @@ import uuid
 import boto3
 from .models import Cat, Toy, Photo
 from .forms import FeedingForm
+from django.contrib.auth import login
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 S3_BASE_URL = 'https://s3-us-west-1.amazonaws.com/'
 BUCKET = 'catcollector'
 
-class CatCreate(CreateView):
+class CatCreate(LoginRequiredMixin, CreateView):
   model = Cat
   fields = ['name', 'breed', 'description', 'age']
 
-class CatUpdate(UpdateView):
+  def form_valid(self, form):
+    form.instance.user = self.request.user
+    return super().form_valid(form)
+
+class CatUpdate(LoginRequiredMixin, UpdateView):
   model = Cat
   fields = ['breed', 'description', 'age']
 
-class CatDelete(DeleteView):
+class CatDelete(LoginRequiredMixin, DeleteView):
   model = Cat
   success_url = '/cats/'
 
@@ -27,12 +35,17 @@ def home(request):
 def about(request):
   return render(request, 'about.html')
 
+@login_required
 def cats_index(request):
-  cats = Cat.objects.all()
+  cats = Cat.objects.filter(user=request.user)
   return render(request, 'cats/index.html', { 'cats': cats })
 
+@login_required
 def cats_detail(request, cat_id):
-  cat = Cat.objects.get(id=cat_id)
+  try:
+    cat = Cat.objects.get(id=cat_id, user=request.user)
+  except:
+    return redirect('index')
   # Get the toys the cat doesn't have
   toys_cat_doesnt_have = Toy.objects.exclude(id__in = cat.toys.all().values_list('id'))
   # Instantiate FeedingForm to be rendered in the template
@@ -44,6 +57,7 @@ def cats_detail(request, cat_id):
     'toys': toys_cat_doesnt_have
   })
 
+@login_required
 def add_feeding(request, cat_id):
 	# create the ModelForm using the data in request.POST
   form = FeedingForm(request.POST)
@@ -56,6 +70,7 @@ def add_feeding(request, cat_id):
     new_feeding.save()
   return redirect('detail', cat_id=cat_id)
 
+@login_required
 def add_photo(request, cat_id):
 	# photo-file was the "name" attribute on the <input type="file">
   photo_file = request.FILES.get('photo-file', None)
@@ -75,28 +90,44 @@ def add_photo(request, cat_id):
       print('An error occurred uploading file to S3')
   return redirect('detail', cat_id=cat_id)
 
+@login_required
 def assoc_toy(request, cat_id, toy_id):
   Cat.objects.get(id=cat_id).toys.add(toy_id)
   return redirect('detail', cat_id=cat_id)
 
+@login_required
 def unassoc_toy(request, cat_id, toy_id):
   Cat.objects.get(id=cat_id).toys.remove(toy_id)
   return redirect('detail', cat_id=cat_id)
 
-class ToyList(ListView):
+class ToyList(LoginRequiredMixin, ListView):
   model = Toy
 
-class ToyDetail(DetailView):
+class ToyDetail(LoginRequiredMixin, DetailView):
   model = Toy
 
-class ToyCreate(CreateView):
+class ToyCreate(LoginRequiredMixin, CreateView):
   model = Toy
   fields = '__all__'
 
-class ToyUpdate(UpdateView):
+class ToyUpdate(LoginRequiredMixin, UpdateView):
   model = Toy
   fields = ['name', 'color']
 
-class ToyDelete(DeleteView):
+class ToyDelete(LoginRequiredMixin, DeleteView):
   model = Toy
   success_url = '/toys/'
+
+def signup(request):
+  error_message = ''
+  if request.method == 'POST':
+    form = UserCreationForm(request.POST)
+    if form.is_valid():
+      user = form.save()
+      login(request, user)
+      return redirect('index')
+    else:
+      error_message = 'Invalid sign up - try again'
+  form = UserCreationForm()
+  context = { 'form': form, 'error_message': error_message }
+  return render(request, 'registration/signup.html', context)
