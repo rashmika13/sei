@@ -11,7 +11,7 @@ This folder also contains test scripts that you can use on your code.
 
 Make sure that you completed the myGA module for Divide-and-Conquer Sorting Algorithms before completing these exercises.
 
-> **Note**: The myGA module links out to a CodePen for code challenges for both merge sort and quick sort. **Those exercises are the same as the ones here and are meant to help you prepare for the in-class exercises.**
+> **Note**: The myGA module links out to a CodePen for code challenges for both merge sort and quick sort. **Those exercises are the same as the ones here.**
 
 ## Tip
 In the `MergeSort.js` exercise, you have code for the merge helper algorithm. So really, you're just implementing the merge sort algorithm! 

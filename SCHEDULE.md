@@ -618,7 +618,6 @@
 </tbody>
 </table>
 
-<!-- 
 ### Week 9 (July 6 - 10)
 
 <table>
@@ -638,15 +637,21 @@
   <td><strong>Morning</strong></td>
   <td>Project 3</td>
   <td>Project 3</td>
-  <td>Project 3</td>
+  <td>
+    Other Sorting Algorithms & Jupyter Notebooks
+  </td>
   <td>Project 3</td>
   <td>Project 3 Presentations</td>
 </tr>
 
 <tr>
   <td><strong>Afternoon</strong></td>
-  <td>Project 3</td>
-  <td>Project 3</td>
+  <td>
+    <a href="w09/d1/django-testing">Django Testing</a>
+  </td>
+  <td>
+    <a href="w09/d2/deploy-django-heroku.md">Deploy Django to Heroku</a>
+  </td>
   <td>Project 3</td>
   <td>Project 3</td>
   <td>Unit 3 Assessment</td>
