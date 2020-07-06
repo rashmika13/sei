@@ -10,7 +10,7 @@ There are three components to this lesson:
 2. [Exercise: Implementing Merge Sort](exercises/MergeSort.js)
 3. [Exercise: Implementing Quick Sort](exercises/QuickSort.js)
 
-> **Note**: The myGA module contains a link to an exercise in CodePen. **The code in CodePen is the exact same as the code for the in-class exercises.** Try out the exercise in CodePen and see how far you can get with it. Leave off where you get stuck and we'll review the solution in class.
+> **Note**: The myGA module contains a link to an exercise in CodePen. **The code in CodePen is the exact same as the code for the exercises.** Try out the exercise in CodePen and see how far you can get with it. Leave off where you get stuck and we'll review the solution in class.
 
 ## Learning Objectives
 By the end of this lesson, you will be able to:
