@@ -100,7 +100,7 @@ Style the components to make the output look like a floor plan:
 
 ## Deliverable
 
-When completed, please slack your instructors the link to your CodeSandbox.
+This lab is a deliverable
 
 ## Solution
 
