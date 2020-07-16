@@ -1,0 +1,30 @@
+.GuessScore {
+    display: flex;
+    align-items: center;
+    width: 24px;
+    flex-wrap: wrap;
+}
+
+.GuessScore-peg {
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    border: 2px solid;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.GuessScore-peg-perfect {
+    border-color: black;
+    background-color: black;
+}
+
+.GuessScore-peg-almost {
+    border-color: black;
+    background-color: white;
+}
+
+.GuessScore-peg-incorrect {
+    border-color: white;
+    background-color: lightgrey
+}

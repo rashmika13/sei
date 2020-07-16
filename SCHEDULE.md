@@ -667,4 +667,75 @@
 </tr>
 </tbody>
 </table>
--->
+
+## Unit 4
+
+### Week 10 (July 13 - 17)
+
+<table>
+<thead>
+<tr>
+  <td></td>
+  <th>Monday</th>
+  <th>Tuesday</th>
+  <th>Wednesday</th>
+  <th>Thursday</th>
+  <th>Friday</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+  <td><strong>Morning</strong></td>
+  <td>
+    <a href="w10/d1/intro-to-spas-and-react.md">Intro to SPAs and React</a></br></br>
+    <a href="w10/d1/intro-to-jsx.md">Intro to JSX</a>
+  </td>
+  <td>
+    <a href="w10/d2/components-in-react">Components in React</a>
+  </td>
+  <td>
+    <a href="w10/d3/styling-react-components">Styling React Components</a>
+  </td>
+  <td>
+    <a href="w10/d4/event-handling-in-react">Event Handling in React</a></br></br>
+    <a href="w10/d4/event-handling-lab">Event Handling Lab</a>
+  </td>
+  <td>
+    <a href="w10/d5/react-router">React Router</a></br></br>
+    <a href="w10/d5/mastermind-settings-lab">React Router Lab</a>
+  </td>
+</tr>
+
+<tr>
+  <td><strong>Afternoon</strong></td>
+  <td>
+    <a href="w10/d1/react-floorplan-lab.md">React Floorplan Lab</a>
+  </td>
+  <td>
+    <a href="w10/d2/react-state-props">React State and Props</a></br></br>
+    <a href="w10/d2/react-students-lab.md">Lab: React Students</a>
+  </td>
+  <td>
+    <a href="w10/d3/styling-react-lab">Styling React Lab</a></br></br>
+    <a href="w10/d3/closures.md">Closures</a></br></br>
+    <a href="w10/d3/updating-state-react.md">Updating State in React</a>
+  </td>
+  <td>
+    <a href="w10/d4/handling-input-in-react.md">Handling Input in React</a>
+  </td>
+  <td>
+    Group problem solving and JS Trivia :)
+  </td>
+</tr>
+
+<tr>
+  <td><strong>Homework</strong></td>
+  <td><a href="w10/d1/react-floorplan-lab.md">React Floorplan Lab (Deliverable)</a></td>
+  <td><a href="w10/d2/react-students-lab.md">Lab: React Students (Deliverable)</a></td>
+  <td><a href="w10/d3/styling-react-lab">Styling React Lab</a></td>
+  <td><a href="w10/d4/event-handling-lab">Event Handling Lab</a></td>
+  <td><a href="w10/d5/mastermind-settings-lab">React Router Lab</a></td>
+</tr>
+</tbody>
+</table>
