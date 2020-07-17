@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import GameBoard from './components/GameBoard/GameBoard';
-import ColorPicker from './components/ColorPicker/ColorPicker';
-import GameTimer from './components/GameTimer/GameTimer';
-import NewGameButton from './components/NewGameButton/NewGameButton';
+import { Route, Switch } from 'react-router-dom';
+import GamePage from '../GamePage/GamePage';
+import Settings from '../Settings/Settings';
+import NotFound from '../NotFound/NotFound';
 
 const colors = ['#7CCCE5', '#FDE47F', '#E04644', '#B576AD'];
 
@@ -17,7 +17,7 @@ class App extends Component {
     return {
       selColorIdx: 0,
       guesses: [this.getNewGuess()],
-      code: this.genCode()
+      code: this.genCode(),
     };
   }
 
@@ -26,13 +26,13 @@ class App extends Component {
       code: [null, null, null, null],
       score: {
         perfect: 0,
-        almost: 0
-      }
+        almost: 0,
+      },
     };
   }
 
   genCode() {
-    return new Array(4).fill().map(dummy => Math.floor(Math.random() * 4));
+    return new Array(4).fill().map((dummy) => Math.floor(Math.random() * 4));
   }
 
   getWinTries() {
@@ -42,12 +42,12 @@ class App extends Component {
   }
 
   handleColorSelection = (colorIdx) => {
-    this.setState({selColorIdx: colorIdx});
-  }
+    this.setState({ selColorIdx: colorIdx });
+  };
 
   handleNewGameClick = () => {
     this.setState(this.getInitialState());
-  }
+  };
 
   handlePegClick = (pegIdx) => {
     // Get index of last guess object
@@ -55,7 +55,7 @@ class App extends Component {
 
     // Always replace objects/arrays with NEW ones
     let guessesCopy = [...this.state.guesses];
-    let guessCopy = {...guessesCopy[currentGuessIdx]};
+    let guessCopy = { ...guessesCopy[currentGuessIdx] };
     let codeCopy = [...guessCopy.code];
 
     // Update the NEW code array with the currently selected color
@@ -69,9 +69,9 @@ class App extends Component {
 
     // Update state with the NEW guesses array
     this.setState({
-        guesses: guessesCopy
+      guesses: guessesCopy,
     });
-  }
+  };
 
   handleScoreClick = () => {
     // Need the index of the current guess object (last object in guesses array)
@@ -83,7 +83,8 @@ class App extends Component {
     let guessCodeCopy = [...this.state.guesses[currentGuessIdx].code];
     let secretCodeCopy = [...this.state.code];
 
-    let perfect = 0, almost = 0;
+    let perfect = 0,
+      almost = 0;
 
     // First pass computes number of "perfect"
     guessCodeCopy.forEach((code, idx) => {
@@ -108,10 +109,10 @@ class App extends Component {
     });
 
     // State must only be updated with NEW objects/arrays
-        // Always replace objects/arrays with NEW ones
+    // Always replace objects/arrays with NEW ones
     let guessesCopy = [...this.state.guesses];
-    let guessCopy = {...guessesCopy[currentGuessIdx]};
-    let scoreCopy = {...guessCopy.score};
+    let guessCopy = { ...guessesCopy[currentGuessIdx] };
+    let scoreCopy = { ...guessCopy.score };
 
     // Set scores
     scoreCopy.perfect = perfect;
@@ -128,35 +129,37 @@ class App extends Component {
 
     // Finally, update the state with the NEW guesses array
     this.setState({
-      guesses: guessesCopy
+      guesses: guessesCopy,
     });
-  }
+  };
 
   render() {
     let winTries = this.getWinTries();
     return (
       <div className="App">
-        <header className='App-header-footer'>R E A C T &nbsp;&nbsp;&nbsp;  M A S T E R M I N D</header>
-        <div className="flex-h align-flex-end">
-          <GameBoard
-            colors={colors}
-            guesses={this.state.guesses}
-            handlePegClick={this.handlePegClick}
-            handleScoreClick={this.handleScoreClick}
+        <header className="App-header-footer">
+          R E A C T &nbsp;&nbsp;&nbsp; M A S T E R M I N D
+        </header>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <GamePage
+                winTries={winTries}
+                colors={colors}
+                selColorIdx={this.state.selColorIdx}
+                guesses={this.state.guesses}
+                handleColorSelection={this.handleColorSelection}
+                handleNewGameClick={this.handleNewGameClick}
+                handlePegClick={this.handlePegClick}
+                handleScoreClick={this.handleScoreClick}
+              />
+            )}
           />
-          <div className='App-controls'>
-            <ColorPicker
-              colors={colors}
-              selColorIdx={this.state.selColorIdx}
-              handleColorSelection={this.handleColorSelection}
-            />
-            <GameTimer />
-            <NewGameButton handleNewGameClick={this.handleNewGameClick}/>
-          </div>
-        </div>
-        <footer className='App-header-footer'>
-          {(winTries ? `You Won in ${winTries} Guesses!` : 'Good Luck!')}
-        </footer>
+          <Route path="/settings" component={Settings} />
+          <Route component={NotFound} />
+        </Switch>
       </div>
     );
   }
