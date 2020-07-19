@@ -1,23 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
-import GameBoard from './components/GameBoard/GameBoard';
-import ColorPicker from './components/ColorPicker/ColorPicker';
-import GameTimer from './components/GameTimer/GameTimer';
-import NewGameButton from './components/NewGameButton/NewGameButton';
+import GamePage from '../../pages/GamePage/GamePage';
+import { Route, Switch } from 'react-router-dom';
+import SettingsPage from '../SettingsPage/SettingsPage';
 
-const colors = ['#7CCCE5', '#FDE47F', '#E04644', '#B576AD'];
+const colors = {
+  Easy: ['#7CCCE5', '#FDE47F', '#E04644', '#B576AD'],
+  Moderate: ['#7CCCE5', '#FDE47F', '#E04644', '#B576AD', '#B7D968'],
+  Difficult: ['#7CCCE5', '#FDE47F', '#E04644', '#B576AD', '#B7D968', '#555E7B']
+};
 
 class App extends Component {
   constructor() {
     super();
-    this.state = this.getInitialState();
+    this.state = {...this.getInitialState(), difficulty: 'Easy'};
   }
 
   getInitialState() {
     return {
       selColorIdx: 0,
       guesses: [this.getNewGuess()],
-      code: this.genCode()
+      code: this.genCode(),
+      // new state coming in!
+      elapsedTime: 0
     };
   }
 
@@ -32,7 +37,9 @@ class App extends Component {
   }
 
   genCode() {
-    return new Array(4).fill().map(dummy => Math.floor(Math.random() * 4));
+    let numColors = this.state && colors[this.state.difficulty].length;
+    numColors = numColors || 4;
+    return new Array(4).fill().map(dummy => Math.floor(Math.random() * numColors));
   }
 
   getWinTries() {
@@ -41,6 +48,15 @@ class App extends Component {
     return this.state.guesses[lastGuess].score.perfect === 4 ? lastGuess + 1 : 0;
   }
 
+  handleTimerUpdate = () => {
+    this.setState((curState) => ({elapsedTime: ++curState.elapsedTime}));
+  }
+
+  handleDifficultyChange = (level) => {
+    // Use callback to ensure level is updated BEFORE calling handleNewGameClick
+    this.setState({difficulty: level}, () => this.handleNewGameClick());
+  }
+  
   handleColorSelection = (colorIdx) => {
     this.setState({selColorIdx: colorIdx});
   }
@@ -135,28 +151,32 @@ class App extends Component {
   render() {
     let winTries = this.getWinTries();
     return (
-      <div className="App">
-        <header className='App-header-footer'>R E A C T &nbsp;&nbsp;&nbsp;  M A S T E R M I N D</header>
-        <div className="flex-h align-flex-end">
-          <GameBoard
-            colors={colors}
-            guesses={this.state.guesses}
-            handlePegClick={this.handlePegClick}
-            handleScoreClick={this.handleScoreClick}
-          />
-          <div className='App-controls'>
-            <ColorPicker
-              colors={colors}
+      <div>
+        <header className='header-footer'>R E A C T &nbsp;&nbsp;&nbsp;  M A S T E R M I N D</header>
+        <Switch>
+          <Route exact path='/' render={() =>
+            <GamePage
+              winTries={winTries}
+              colors={colors[this.state.difficulty]}
               selColorIdx={this.state.selColorIdx}
+              guesses={this.state.guesses}
+              elapsedTime={this.state.elapsedTime}
               handleColorSelection={this.handleColorSelection}
+              handleNewGameClick={this.handleNewGameClick}
+              handlePegClick={this.handlePegClick}
+              handleScoreClick={this.handleScoreClick}
+              handleTimerUpdate={this.handleTimerUpdate}
             />
-            <GameTimer />
-            <NewGameButton handleNewGameClick={this.handleNewGameClick}/>
-          </div>
-        </div>
-        <footer className='App-header-footer'>
-          {(winTries ? `You Won in ${winTries} Guesses!` : 'Good Luck!')}
-        </footer>
+          } />
+          <Route exact path='/settings' render={props => 
+            <SettingsPage
+              {...props} 
+              colorsLookup={colors}
+              difficulty={this.state.difficulty}
+              handleDifficultyChange={this.handleDifficultyChange}
+            />
+          } />
+        </Switch>
       </div>
     );
   }
