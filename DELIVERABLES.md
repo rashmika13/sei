@@ -36,3 +36,4 @@
 |---|---|---|
 |July 13|[React Floorplan Lab](w10/d1/react-floorplan-lab.md)| July 20 |
 |July 14|[React Students Lab](w10/d2/react-students-lab.md)| July 21 |
+|July 21|[React AJAX Lab - Choice from 2](https://git.generalassemb.ly/sei-toronto/sei-4-collab/tree/master/react-ajax)| July 28 |

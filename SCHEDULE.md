@@ -739,3 +739,68 @@
 </tr>
 </tbody>
 </table>
+
+### Week 11 (July 20 - 24)
+
+<table>
+<thead>
+<tr>
+  <td></td>
+  <th>Monday</th>
+  <th>Tuesday</th>
+  <th>Wednesday</th>
+  <th>Thursday</th>
+  <th>Friday</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+  <td><strong>Morning</strong></td>
+  <td>
+    <a href="w11/d1/component-lifecycle-methods">Component Lifecycle Methods</a></br>
+  </td>
+  <td>
+    <a href="w11/d2/react-ajax">React AJAX</a>
+  </td>
+  <td>
+    <a href="w11/d3/full-stack-react">Full Stack React</a>
+  </td>
+  <td>
+    <a href="w11/d4/token-based-auth">Token Based Auth</a>
+  </td>
+  <td>
+    <a href="w11/d5/realtime-with-socket-io">Realtime Apps with Socket.io</a></br></br>
+    <a href="w11/d5/socket-io-lab">Socket.io stretch Lab</a></br>
+  </td>
+</tr>
+
+<tr>
+  <td><strong>Afternoon</strong></td>
+  <td>
+    <a href="w11/d2/intro-to-react-hooks">React Hooks</a>
+  </td>
+  <td>
+    <a href="https://git.generalassemb.ly/sei-toronto/sei-4-collab/tree/master/react-ajax">React AJAX Lab</a>
+  </td>
+  <td>
+    <a href="w11/d3/full-stack-react-lab">Full Stack React Lab</a>
+  </td>
+  <td>
+    <a href="w11/d4/token-based-auth">Token Based Auth</a>
+  </td>
+  <td>
+    CS Problems and Project 4
+  </td>
+</tr>
+
+<tr>
+  <td><strong>Homework</strong></td>
+  <td>Review</td>
+  <td>React AJAX Lab</td>
+  <td>React AJAX Lab & Fullstack Lab</td>
+  <td>Review</td>
+  <td>Project 4</td>
+</tr>
+</tbody>
+</table>
