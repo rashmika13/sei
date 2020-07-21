@@ -17,3 +17,13 @@
   color: var(--text-color);
   opacity: 0.85;
 }
+
+.App-header div {
+  color: white;
+  font-size: 8vmin;
+  font-weight: bold;
+}
+
+.App-header img {
+  height: 15vmin;
+}
