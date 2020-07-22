@@ -790,7 +790,7 @@
     <a href="w11/d4/token-based-auth">Token Based Auth</a>
   </td>
   <td>
-    CS Problems and Project 4
+    CS Problems and Project 4 Assessment
   </td>
 </tr>
 
