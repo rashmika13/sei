@@ -10,7 +10,7 @@ import './GamePage.css';
 const GamePage = (props) => {
   return (
     <div className="GamePage">
-      <NavBar />
+      <NavBar user={props.user} handleLogout={props.handleLogout} />
       <div className="flex-h align-flex-end">
         <GameBoard
           colors={props.colors}
@@ -18,7 +18,7 @@ const GamePage = (props) => {
           handlePegClick={props.handlePegClick}
           handleScoreClick={props.handleScoreClick}
         />
-        <div className='GamePage-controls'>
+        <div className="GamePage-controls">
           <ColorPicker
             colors={props.colors}
             selColorIdx={props.selColorIdx}
@@ -29,17 +29,22 @@ const GamePage = (props) => {
             handleTimerUpdate={props.handleTimerUpdate}
             isTiming={props.isTiming}
           />
-          <Link className='btn btn-default GamePage-link-margin' to='/high-scores'>High Scores</Link>
-          <Link className='btn btn-default GamePage-link-margin' to='/settings'>Difficulty</Link>
-          <NewGameButton handleNewGameClick={props.handleNewGameClick}/>
+          {props.user && (
+            <Link className="btn btn-default GamePage-link-margin" to="/high-scores">
+              High Scores
+            </Link>
+          )}
+          <Link className="btn btn-default GamePage-link-margin" to="/settings">
+            Difficulty
+          </Link>
+          <NewGameButton handleNewGameClick={props.handleNewGameClick} />
         </div>
       </div>
-      <footer className='header-footer'>
-        {(props.winTries ? `You Won in ${props.winTries} Guesses!` : 'Good Luck!')}
+      <footer className="header-footer">
+        {props.winTries ? `You Won in ${props.winTries} Guesses!` : 'Good Luck!'}
       </footer>
     </div>
   );
-
 };
 
 export default GamePage;
