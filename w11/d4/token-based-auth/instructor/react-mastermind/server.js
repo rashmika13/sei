@@ -16,11 +16,18 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // Put API routes here, before the "catch all" route
 app.use('/api/users', require('./routes/api/users'));
+// app.use('/api', require('./config/auth')); // example where middleware runs for every /api route after it
+// app.use(require('./config/auth'));  // example where middleware runs for every route after it
+// app.use('/api/scores', require('./config/auth'), require('./routes/api/scores')); // ex where it runs only when route matches /api/scores
 app.use('/api/scores', require('./routes/api/scores'));
 
+app.use('/api', function (req, res) {
+  res.status(404).json({ error: 'Resource not found' });
+});
+
 // The following "catch all" route (note the *)is necessary
-// for a SPA's client-side routing to properly work 
-app.get('/*', function(req, res) {
+// for a SPA's client-side routing to properly work
+app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
@@ -28,6 +35,6 @@ app.get('/*', function(req, res) {
 // development to avoid collision with React's dev server
 const port = process.env.PORT || 3001;
 
-app.listen(port, function() {
-  console.log(`Express app running on port ${port}`)
+app.listen(port, function () {
+  console.log(`Express app running on port ${port}`);
 });

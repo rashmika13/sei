@@ -771,7 +771,7 @@
   </td>
   <td>
     <a href="w11/d5/realtime-with-socket-io">Realtime Apps with Socket.io</a></br></br>
-    <a href="w11/d5/socket-io-lab">Socket.io stretch Lab</a></br>
+    <a href="w11/d5/realtime-chat-lab">Socket.io stretch Lab</a></br>
   </td>
 </tr>
 
@@ -790,7 +790,7 @@
     <a href="w11/d4/token-based-auth">Token Based Auth</a>
   </td>
   <td>
-    CS Problems and Project 4
+    CS Problems and Project 4 Assessment
   </td>
 </tr>
 
