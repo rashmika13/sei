@@ -10,23 +10,30 @@
     />
 
     <link rel="stylesheet" href="/stylesheets/home.css" />
+    <script defer src="/javascripts/watchlist.js"></script>
   </head>
   <body>
     <%- include('../partials/navbar') %>
-    <div class="container px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center"">
-      <h1 class="display-4">My Movie Watchlist</h1>
+    <div class="container px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">My Movie Nominees</h1>
       <!-- list out movies -->
-      
+
       <section id="movies-list">
-      <% myMovies.forEach(movie => { %>      
+        <% myMovies.forEach(movie => { %>
         <div class="card m-1" id="movie-<%= movie._id %>">
-          <img src="<%= movie.img %>" class="card-img-top" alt="<%= movie.title %>">
+          <img
+            src="<%= movie.img %>"
+            class="card-img-top"
+            alt="<%= movie.title %>"
+          />
           <div class="card-body">
             <h5 class="card-title"><%= movie.title %></h5>
-            <button data-id="${movie._id}" class="btn btn-danger">Remove</button>
+            <button id="remove" data-id="<%= movie._id %>" class="btn">
+              Remove
+            </button>
           </div>
         </div>
-      <% }) %>
+        <% }) %>
       </section>
     </div>
   </body>

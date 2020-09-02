@@ -1,11 +1,37 @@
 .heading {
-    max-width: 700px;
+  max-width: 700px;
 }
 
+body {
+  background-color: #fbf7ed;
+}
 #movies-list {
-    max-width: 800px;
-    margin: 10px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+  max-width: 800px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+#navbar {
+  background-color: #034d3f;
+  color: white;
+}
+
+#button {
+  background-color: #098060;
+  color: white;
+}
+
+h5 {
+  color: white;
+}
+
+#text {
+  color: white;
+}
+
+#remove {
+  background-color: #c53357;
+  color: white;
 }

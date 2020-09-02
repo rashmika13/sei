@@ -804,3 +804,49 @@
 </tr>
 </tbody>
 </table>
+
+### Week 12 (July 27 - 31)
+
+<table>
+<thead>
+<tr>
+  <td></td>
+  <th>Monday</th>
+  <th>Tuesday</th>
+  <th>Wednesday</th>
+  <th>Thursday</th>
+  <th>Friday</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+  <td><strong>Morning</strong></td>
+  <td>Project 4</td>
+  <td>Project 4</td>
+  <td>Project 4</td>
+  <td>Project 4</td>
+  <td>Project 4 Presentations</td>
+</tr>
+
+<tr>
+  <td><strong>Afternoon</strong></td>
+  <td>Project 4</td>
+  <td>Project 4</td>
+  <td>Project 4</td>
+  <td>Project 4</td>
+  <td>Celebrate!!</td>
+</tr>
+
+<tr>
+  <td><strong>Homework</strong></td>
+  <td>Project 4</td>
+  <td>Project 4</td>
+  <td>Project 4</td>
+  <td>Project 4</td>
+  <td>Celebrate!!</td>
+</tr>
+
+</tbody>
+</table>
+
