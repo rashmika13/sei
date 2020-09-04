@@ -16,6 +16,15 @@
     <%- include('../partials/navbar') %>
     <div class="container px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 class="display-4">My Movie Nominees</h1>
+      <!-- HTML Code -->
+      <!-- <marquee
+        class="GeneratedMarquee"
+        direction="left"
+        scrollamount="10"
+        behavior="scroll"
+        >You have 5 Nominations !</marquee
+      > -->
+
       <!-- list out movies -->
 
       <section id="movies-list">
@@ -31,6 +40,15 @@
             <button id="remove" data-id="<%= movie._id %>" class="btn">
               Remove
             </button>
+            <div
+              class="btnAnim222"
+              style="
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                padding: 8px;
+              "
+            ></div>
           </div>
         </div>
         <% }) %>

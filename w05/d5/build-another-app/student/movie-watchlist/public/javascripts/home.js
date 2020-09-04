@@ -5,6 +5,7 @@ let moviesDb, movieElementsDb;
 const moviesListEl = document.getElementById("movies-list");
 const searchFormEl = document.getElementById("search-form");
 const searchInputEl = document.querySelector("#search-form input");
+const bannerEl = document.querySelector(".banner");
 
 // events listeners
 searchFormEl.addEventListener("submit", handleSearch);
@@ -69,11 +70,13 @@ function movieCardHTML(movie) {
   }">
     <div class="card-body">
       <h5 class="card-title">${movie.title}</h5>
+      
       ${
         movie.inMyMovies
-          ? "<p>Nominated !</p>"
-          : `<button data-imdb-id="${movie.imdbID}" class="btn btn-primary">Nominate Me</button>`
+          ? "<p style=color:#c53357>Nominated !</p>"
+          : `<button data-imdb-id="${movie.imdbID}" class="btn"style="background-color:#034e40; color:white">Nominate Me</button>`
       }
+
     </div>`;
 }
 
@@ -90,4 +93,14 @@ function renderMovieList(movie) {
   Object.values(movieElementsDb).forEach((movieElement) =>
     moviesListEl.append(movieElement)
   );
+}
+
+async function handleAddBanner(evt) {
+  const imdbID = evt.target.getAttribute("data-imdb-id");
+  var numClicks = 0;
+  numClicks++;
+  if (numClicks === 5) {
+    const bannerEl = document.querySelector(".banner");
+    bannerEl.style.display = "block";
+  }
 }

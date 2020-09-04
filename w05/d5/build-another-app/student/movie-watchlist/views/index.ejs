@@ -14,6 +14,12 @@
   </head>
   <body>
     <%- include('partials/navbar') %>
+    <div class="banner" style="padding: 15px; text-align: center">
+      <div class="banner-content">
+        <h1>Hello</h1>
+        <p>You have 5 nominations !</p>
+      </div>
+    </div>
     <form
       id="search-form"
       class="heading px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center"
@@ -33,6 +39,25 @@
         </div>
       </div>
     </form>
+    <div
+      style="
+        width: 60%;
+        height: 0;
+        padding-left: 35%;
+        padding-bottom: 20%;
+        position: relative;
+      "
+    >
+      <iframe
+        src="https://giphy.com/embed/du5d9o1vf2nJ8EtNUN"
+        width="50%"
+        height="50%"
+        style="position: absolute"
+        frameBorder="0"
+        class="giphy-embed"
+        allowFullScreen
+      ></iframe>
+    </div>
 
     <section id="movies-list"></section>
   </body>

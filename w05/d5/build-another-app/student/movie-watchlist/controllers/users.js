@@ -1,5 +1,5 @@
-const passport = require('passport');
-const User = require('../models/user');
+const passport = require("passport");
+const User = require("../models/user");
 
 module.exports = {
   loginForm,
@@ -10,13 +10,17 @@ module.exports = {
 };
 
 function loginForm(req, res) {
-  res.render('users/login', { heading: 'Please Login', postUrl: '/login', btnText: 'Sign In' });
+  res.render("users/login", {
+    heading: "Please Login",
+    postUrl: "/login",
+    btnText: "Sign In",
+  });
 }
 
 function login(req, res, next) {
   // or skip the strategy
   User.findOne({ email: req.body.email })
-    .select('+password')
+    .select("+password")
     .exec(function (err, user) {
       if (err) {
         // could change to redirect back to form with error message
@@ -24,26 +28,26 @@ function login(req, res, next) {
       }
       if (!user) {
         // could change to redirect back to form with error message
-        return next(Error('Invalid Credentials'));
+        return next(Error("Invalid Credentials"));
       }
       user.comparePassword(req.body.password, (err, isMatch) => {
         if (isMatch) {
           req.logIn(user, function (err) {
             if (err) return next(err);
-            return res.redirect('/');
+            return res.redirect("/");
           });
         }
         // could change to redirect back to form with error message
-        return next(Error('Invalid Credentials'));
+        return next(Error("Invalid Credentials"));
       });
     });
 }
 
 function signupForm(req, res) {
-  res.render('users/signup', {
-    heading: 'Please Sign Up',
-    postUrl: '/signup',
-    btnText: 'Sign Up',
+  res.render("users/signup", {
+    heading: "Please Sign Up",
+    postUrl: "/signup",
+    btnText: "Sign Up",
   });
 }
 
@@ -56,7 +60,7 @@ async function signup(req, res, next) {
       if (err) {
         return next(err);
       }
-      return res.redirect('/');
+      return res.redirect("/");
     });
   } catch (err) {
     // Probably a duplicate email, could change to redirect back to form with error message
@@ -66,5 +70,5 @@ async function signup(req, res, next) {
 
 function logout(req, res) {
   req.logout();
-  res.redirect('/');
+  res.redirect("/");
 }

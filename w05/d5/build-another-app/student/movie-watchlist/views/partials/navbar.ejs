@@ -1,13 +1,22 @@
 <div id="navbar"
   class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3  border-bottom shadow-sm"
 >
-  <h5 class="my-0 mr-md-auto font-weight-normal">The Shoppies: Movie awards for entrepreneurs
+  <h5 class="my-0 mr-md-auto font-weight-normal"><em style="font-weight:bold">The Shoppies: </em>Movie awards for entrepreneurs
   </h5>
+
+
+  <div style="width:35%;height:50px;padding-bottom:2%;position:relative;">
+    <iframe src="https://giphy.com/embed/l0MYvaQHWY70MyIM0" width="60%" height="90%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  </div>
+
   <nav class="my-2 my-md-0 mr-md-3">
     <a id="text" class="p-2 " href="/">Search Movies</a>
     <a id="text" class="p-2 " href="/watchlist">My Movies</a>
     <% if (user) { %>
+     
     <a id="button" class="btn" href="/logout">Logout</a>
+    
+    <h6>Welcome ! <%= user.email %> </h6>
   </nav>
   <% } else { %>
   </nav>  
@@ -15,3 +24,5 @@
   <a id="button" class="btn " href="/signup">Sign up</a>
   <% } %>
 </div>
+
+

@@ -35,3 +35,31 @@ h5 {
   background-color: #c53357;
   color: white;
 }
+
+.btnAnim222 {
+  animation: scaler 1s linear 0s infinite alternate none running;
+}
+.btnAnim222:hover {
+  animation-play-state: paused;
+}
+
+h6 {
+  text-align: center;
+}
+
+.banner {
+  background-color: #c0f1cf;
+  color: #034d3f;
+  width: 50%;
+  margin-left: 25%;
+  display: none;
+}
+
+/* .GeneratedMarquee {
+  font-family: "Comic Sans MS";
+  font-size: 2em;
+  line-height: 1.3em;
+  color: #330099;
+  background-color: #ccffff;
+  padding: 1.5em;
+} */
