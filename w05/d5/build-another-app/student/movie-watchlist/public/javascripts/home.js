@@ -96,7 +96,6 @@ function renderMovieList(movie) {
 }
 
 async function handleAddBanner(evt) {
-  const imdbID = evt.target.getAttribute("data-imdb-id");
   var numClicks = 0;
   numClicks++;
   if (numClicks === 5) {
